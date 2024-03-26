@@ -10,6 +10,9 @@ metadata:
 spec:
   replicas: 1
   strategy: {}
+  selector:
+    matchLabels:
+      io.kompose.service: payment
   template:
     metadata:
       labels:
@@ -33,4 +36,3 @@ spec:
             cpu: 100m
             memory: 50Mi
       restartPolicy: Always
-status: {}
