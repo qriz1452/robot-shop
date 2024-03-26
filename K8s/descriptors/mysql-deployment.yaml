@@ -4,7 +4,6 @@ metadata:
   annotations:
     kompose.cmd: kompose -f ../docker-compose.yaml convert
     kompose.version: 1.10.0 (8bb0907)
-  creationTimestamp: null
   labels:
     io.kompose.service: mysql
   name: mysql
@@ -13,7 +12,6 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         io.kompose.service: mysql
     spec:
